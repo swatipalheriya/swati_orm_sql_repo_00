@@ -1,0 +1,13 @@
+create table employee(id int, name varchar(255), department varchar(255), salary float);
+insert into employee values(1, 'Aman','IT', 12000.0);
+insert into employee values(2, 'Bhuvan','HR', 15000.0);
+insert into employee values(3, 'Chandan','Admin', 18000.0);
+insert into employee values(4, 'Ramesh','Admin', 17000.0);
+insert into employee values(5, 'Jojin','IT', 13500.0);
+insert into employee values(6, 'Samuel','Admin', 18000.0);
+select id,name from employee where department = 'IT';
+select sum(salary),avg(salary),max(salary),min(salary) from employee;
+select * from employee order by department;
+select * from employee order by department asc;
+select * from employee where salary >15000 order by department;
+select name from employee where name not like '%a%';
